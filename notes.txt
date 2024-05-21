@@ -1,0 +1,11 @@
+Debo insertar registros de prueba en una DB de SQLite3 teniendo en cuenta los siguientes parámetros:
+
+# DLL
+CREATE TABLE vehiculos (
+    id INTEGER NOT NULL,
+    marca VARCHAR(50) NOT NULL,
+    modelo VARCHAR(50) NOT NULL,
+    precio FLOAT NOT NULL
+)
+
+A partir de la informacion proporcionada, codifica una sentencia SQL para insertar 50 registos de vehiculos que se comercialicen en Argentina, tanto Autos como Motos.
