@@ -1,7 +1,6 @@
 package objetos_noche.cfp35.tp2_ivan.test;
 
 import java.sql.ResultSet;
-
 import objetos_noche.cfp35.tp2_ivan.connectors.Connector;
 
 public class TestConnector {
@@ -9,9 +8,9 @@ public class TestConnector {
         try (ResultSet rs=Connector
                                     .getConnection()
                                     .createStatement()
-                                    .executeQuery("select * from cursos")){
+                                    .executeQuery("select * from autos")){
             if(rs.next()){
-                System.out.println("Se conecto a "+rs.getString("titulo"));
+                System.out.println(rs.getURL("marca"));
             }else{
                 System.out.println("No se pudo conectar a la BD");
             }

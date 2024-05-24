@@ -14,6 +14,6 @@ public class Auto extends Vehiculo {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Marca: "+this.getMarca()+" // "+"Modelo: "+this.getModelo()+" // "+"Puertas: "+this.getPuertas()+" // "+"Precio: $"+this.getPrecio();
     }
 }

@@ -9,7 +9,7 @@ public class Connector {
     //private static String url="jdbc:mariadb://localhost:3306/colegio";
 
     // SQlite
-    private static String url="jdbc:sqlite:./data/data";
+    public static String url="jdbc:sqlite:./data/data";
 
     
     private static Connection conn=null;
@@ -21,7 +21,6 @@ public class Connector {
         } catch (Exception e) {
             System.out.println(e);
         }
-        return conn;    
+        return conn;
     }
-
 }
