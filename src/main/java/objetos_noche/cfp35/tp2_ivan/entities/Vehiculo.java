@@ -6,9 +6,13 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public abstract class Vehiculo implements Comparable<Vehiculo>{
+    private int id;
     private String marca;
     private String modelo;
     private Float precio;
+
+
+    // public abstract int compareTo(Vehiculo para);
 
     @Override
     public int compareTo(Vehiculo para) {

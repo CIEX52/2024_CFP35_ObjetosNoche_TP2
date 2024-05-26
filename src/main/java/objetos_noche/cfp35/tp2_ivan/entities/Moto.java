@@ -7,8 +7,8 @@ import lombok.Getter;
 public class Moto extends Vehiculo {
     private int cilindrada;
     
-    public Moto(String marca, String modelo, int cilindrada, Float precio) {
-        super(marca, modelo, precio);
+    public Moto(int id, String marca, String modelo, int cilindrada, Float precio) {
+        super(id, marca, modelo, precio);
         this.cilindrada = cilindrada;
     }
 

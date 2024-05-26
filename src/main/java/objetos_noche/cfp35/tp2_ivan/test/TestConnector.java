@@ -10,7 +10,7 @@ public class TestConnector {
                                     .createStatement()
                                     .executeQuery("select * from autos")){
             if(rs.next()){
-                System.out.println(rs.getURL("marca"));
+                System.out.println(rs.getString("marca")+" "+rs.getString("modelo"));
             }else{
                 System.out.println("No se pudo conectar a la BD");
             }
