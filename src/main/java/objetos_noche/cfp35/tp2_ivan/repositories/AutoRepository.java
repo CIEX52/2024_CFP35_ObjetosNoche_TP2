@@ -12,6 +12,9 @@ import objetos_noche.cfp35.tp2_ivan.entities.Auto;
 public class AutoRepository {
     private Connection conn = Connector.getConnection();
 
+    /**
+     * @return Devuelve una lista con todos los autos.
+     */
     @SuppressWarnings({ "rawtypes", "unchecked" })
     public List<Auto> getAllAutos(){
         List<Auto> list = new ArrayList();
@@ -32,6 +35,9 @@ public class AutoRepository {
         return list;
     }
 
+    /**
+     * @return Devuelve una lista de todos los autos con ordenamiento natural empleando el método compareTo(marca, modelo, precio).
+     */
     public List<Auto> autosOrdenados(){
         List<Auto> list = getAllAutos();
         Collections.sort(list);

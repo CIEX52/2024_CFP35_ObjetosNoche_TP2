@@ -17,26 +17,27 @@ public class Tp2IvanApplication {
         System.out.println();
         System.out.println("--- LISTADO DE VEHÍCULOS ---");
         vehiculosRepository.getAllVehiculos().forEach(System.out::println);
+        System.out.println("--------------------------------------------------------------------------------");
         System.out.println();
 
         System.out.println("--- ORDENAMIENTO NATURAL compareTo(modelo, marca, precio) ---");
         vehiculosRepository.vehiculosOrdenados().forEach(System.out::println);
+        System.out.println("--------------------------------------------------------------------------------");
         System.out.println();
 
-        System.out.println("VEHÍCULO MÁS CARO: "+vehiculosRepository.getMasCaro());
+        System.out.println("VEHÍCULO MÁS CARO: ");
+        System.out.println(vehiculosRepository.getMasCaro());
         System.out.println();
-
-        System.out.println("VEHÍCULO MÁS BARATO: "+vehiculosRepository.getMasBarato());
+        System.out.println("VEHÍCULO MÁS BARATO: ");
+        System.out.println(vehiculosRepository.getMasBarato());
         System.out.println();
-
         System.out.println("VEHÍCULOS QUE CONTIENEN EN EL MODELO LA LETRA 'Y':");
         vehiculosRepository.getLikeModelo("y").forEach(System.out::println);
+        System.out.println("--------------------------------------------------------------------------------");
         System.out.println();
 
         System.out.println("--- LISTADO POR PRECIO DE MAYOR A MENOR ---");
-        vehiculosRepository.ordenarPorPrecio().forEach(System.out::println);
-        System.out.println();
-		
+        vehiculosRepository.ordenarPorPrecio().forEach(System.out::println);		
 	}
 
 }
