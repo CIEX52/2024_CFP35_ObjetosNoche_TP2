@@ -11,9 +11,6 @@ public abstract class Vehiculo implements Comparable<Vehiculo>{
     private String modelo;
     private Float precio;
 
-
-    // public abstract int compareTo(Vehiculo para);
-
     @Override
     public int compareTo(Vehiculo para) {
         String thisVehic = this.getMarca()+","+this.getModelo()+","+this.getPrecio();
